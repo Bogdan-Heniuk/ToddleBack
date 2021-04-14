@@ -12,7 +12,7 @@ exports.jwtSignage = async (userData) => {
             email : user.email,
             _id : user._id
         }, process.env.JWT_PRIVATE_KEY, {
-            // expiresIn: '12h'
+            expiresIn: '12h'
         })
     } else {
         return {message: "invalid email or password"}
