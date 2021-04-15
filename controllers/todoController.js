@@ -1,4 +1,4 @@
-const Todo = require('../model/Todo')
+const Todo = require('../models/Todo')
 
 class TodoController {
     async get(req, res) {
